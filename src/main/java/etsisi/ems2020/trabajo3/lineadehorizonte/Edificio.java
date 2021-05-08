@@ -16,6 +16,7 @@ public class Edificio {
         this.xd = xd;
         this.xi = xi;
         this.y = y;
+
     }    
     public int getXi() {
         return this.xi;
