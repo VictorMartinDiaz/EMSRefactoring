@@ -24,17 +24,8 @@ public class Ciudad {
     	 * pruebas.
     	 */
 ciudad = new ArrayList <Edificio>();
-int n = 5;
-int i=0;
-int xi,y,xd;
-for(i=0;i<n;i++)
-{
-xi=(int)(Math.random()*100);
-y=(int)(Math.random()*100);
-xd=(int)(xi+(Math.random()*100));
-this.addEdificio(new Edificio(xi,y,xd));
-}
-        
+metodoRandom(5);
+
 ciudad = new ArrayList <Edificio>();
 }
     
@@ -69,8 +60,8 @@ ciudad = new ArrayList <Edificio>();
 public LineaHorizonte crearLineaHorizonte(int pi, int pd)
 {
 LineaHorizonte linea = new LineaHorizonte(); // LineaHorizonte de salida
-Punto p1 = new Punto();   // punto donde se guardara en su X la Xi del efificio y en su Y la altura del edificio
-Punto p2 = new Punto();   // punto donde se guardara en su X la Xd del efificio y en su Y le pondremos el valor 0
+Punto p1 = new Punto();   // punto donde se guardara en su X la Xi del edificio y en su Y la altura del edificio
+Punto p2 = new Punto();   // punto donde se guardara en su X la Xd del edificio y en su Y le pondremos el valor 0
 Edificio edificio = new Edificio();    
         
 // Caso base, la ciudad solo tiene un edificio, el perfil es el de ese edificio. 
